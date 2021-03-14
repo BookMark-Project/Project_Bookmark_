@@ -60,6 +60,13 @@ body {
 .sidebar-btn:hover {
   background-color: #444;
 }
+.button {
+	color:black;
+	font-color: lightgray;
+}
+.modal-content{
+	background-color: white;
+}
 
 #main {
   transition: margin-left .5s;
