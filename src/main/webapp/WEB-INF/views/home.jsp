@@ -17,18 +17,16 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
-<!-- sideb ar -->
-<link rel="stylesheet" type="text/css" href="./css/sidebar.css">
+<!-- sidebar -->
+<link rel="stylesheet" type="text/css" href="./css/simple-sidebar.css">
 <script type="text/javascript" src="./js/sidebar.js"></script> 
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script>
 $(document).ready(function(){
   $("#myBtn").click(function(){
-    $("#myModal").modal("show");
+    $("#myModal").modal("toggle");
   });
-  $("#myModal").on('shown.bs.modal', function () {
-    alert('The modal is fully shown.');
-  });
+
 });
 </script>
 </head>
@@ -37,6 +35,7 @@ $(document).ready(function(){
 	<div id="header">    
 	<div id="mySidebar" class="sidebar">
 	<div class="sidebar-header">
+	
 		<h3>당신의 책갈피</h3>
 	</div>
 
@@ -46,8 +45,38 @@ $(document).ready(function(){
 	<a href="./list.do">모든 게시글 보기</a>
 	<a href="./book_list.do">책 구경하기</a>
 	
-	
- 
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    새로운 글 작성하기
+  </button>
+  
+ <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">글 작성하기</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        	<h6>글쓴이<input type="text" /></h6>
+          
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-update="modal">완료</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">닫기</button>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
 
 
 	</div>
@@ -62,50 +91,47 @@ $(document).ready(function(){
 	             </button>
 			</span>
 	        <span><a class="navbar-brand" href="./home.do"> <img src="./images/logo.png" alt="logo" style="width: 100px;"></a></span>
-	        <span><button class="button" href="./login.do">start</button></span>
+	        <span><a class="button" href="./login.do">start</a></span>
 			<span><a class="button1" href="./search.do" ><i class="fa fa-search" aria-hidden="true"></i></a></span>	
 				
     	</p>
     	
-<!-- 사진 슬라이드 -->    	
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="height:auto;">
-		  <ol class="carousel-indicators">
-			    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-			    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-			    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-		  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-	      <img src="./images/1.jpg" style="height:auto; " class="d-block w-100%" alt="1" >
-	      <div class="carousel-caption d-none d-md-block">
-	        <h5>First slide label</h5>
-	        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+    	<div class="this_month">
+    	<!-- 이달의 게시글  -->
+    	
+    	<h3>이달의 게시글</h3>
+    	<table>
+    		<tr >
+    			<td ><a href="https://naver.com" /><img src="./images/logo.png"  height="250" width="250"alt="1"/><br/>1</td>
+    			<td><a href="https://daum.net" />2</td>
+    			<td><a href="https://naver.com" />3</td>
+    		</tr>
+    		<tr>
+    			
+    			<td><a href="https://naver.com" />4</td>
+    			<td><a href="https://naver.com" />5</td>
+    			<td><a href="https://naver.com" />6</td>
+    		</tr>
+    		
+    	</table>
+ </div>
+    	
+    	
+    	<br/><br/><br/>
+    	
+    	
+    	<!-- 개발자들 -->
+    	<h5>개발자들</h5>
+    	<table>
+    	<tr>
+    			<td><img src="./images/logo.png"  height="250" width="250"alt="1"/>1</td>
+    			<td>1</td>
+    	</tr>
+    	<tr>
+    			<td>2</td>
+    			<td>1</td>
+    	</tr>
+		</table>
   
 
 
