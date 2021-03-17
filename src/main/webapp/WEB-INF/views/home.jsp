@@ -13,10 +13,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+
 <!-- sidebar -->
 <link rel="stylesheet" type="text/css" href="./css/simple-sidebar.css">
 <script type="text/javascript" src="./js/sidebar.js"></script> 
@@ -102,59 +102,28 @@ $(document).ready(function(){
 			<span><a class="button1" href="./search.do" ><i class="fa fa-search" aria-hidden="true"></i></a></span>	
 				
     	</p>
-    	
-    	<div class="container-xl mt-3 border">
-	    	<div class="grid-container">
-		    		<div class="table_main">
-				    	<div class="grid-item">1</div>
-				    	<div class="grid-item">1</div>
-				    	<div class="grid-item">1</div>
-				    	<div class="grid-item">1</div>
-				    	<div class="grid-item">1</div>
-				    	<div class="grid-item">1</div>
-		    		</div>
-		    </div>
-    	</div>
-    		
-    		
-    	<!-- 이달의 게시글  -->
-    	
-    	<h3>이달의 게시글</h3>
-    	<table>
-    		<tr >
-    			<td><a href="https://naver.com" /><img src="./images/logo.png"  height="250" width="250"alt="1"/><br/>1</td>
-    			<td><a href="https://daum.net" />2</td>
-    			<td><a href="https://naver.com" />3</td>
-    		</tr>
-    		<tr>
-    			
-    			<td><a href="https://naver.com" />4</td>
-    			<td><a href="https://naver.com" />5</td>
-    			<td><a href="https://naver.com" />6</td>
-    		</tr>
-    		
-    	</table>
-    	
- 
-    	
-    	
-    	<br/><br/><br/>
-    	
-    	
-    	<!-- 개발자들 -->
-    	<h5>개발자들</h5>
-    	<table>
-    	<tr>
-    			<td><img src="./images/logo.png"  height="250" width="250"alt="1"/>1</td>
-    			<td>1</td>
-    	</tr>
-    	<tr>
-    			<td>2</td>
-    			<td>1</td>
-    	</tr>
-		</table>
+     
+    <div class="container">
+			  <h1>생각을 보고, 나눔에 감동하다. 책갈피</h1>
+			  <p>책에 대한 감성과 느낌을 담아.</p> 
+			  <p>책갈피에 넣어두세요.</p>
+			  <p>공유하며 더욱 큰 감동을 느끼세요 .</p>
+	</div>
+     
   
-
-</body>
-
-</html>
+        
+   <!-- 이달의 게시글  -->
+    	<div id="content">
+    	<div></div>
+         <table>
+         	<tr rowspan="3">
+         	
+         	</tr>
+         	<tr>
+         	</tr>
+         	<tr>
+         	</tr>
+         </table>
+      </div>
+ </body>
+ </html>

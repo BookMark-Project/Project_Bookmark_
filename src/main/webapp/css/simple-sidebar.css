@@ -215,43 +215,26 @@ body {
           }
 /*이달의 게시글 */
 
+
 h3{
 	padding: 50px;
 	text-align: center;
 }
-table:hover{
+table{
 	opacity: 0.5;
 	text-align: left;
 	
 }
 
-table, th, td {
+table {
 	position: static;
 	border: 2px solid black;
 	border-spacing: 5px;
 	width: 400px;
 	height: 400px;
 	table-layout: fixed;
-	margin-left: 350px;
-}
-th{
-	position: fixed;
-	height: 400px;
-	width: 400px;
-	
-}
-td{
-	position: static;
-	height: 400px;
-	width: 400px;
 	text-align: center;
-	background-color: ;
-	
 }
-
-	
-
-
 /* 개발자들*/
  h5{
  	padding: 50px;
@@ -262,6 +245,21 @@ td{
 	margin: auto;
 }
 
+.container{
+	position: relative;
+padding: 50px;
+}
+
+
+	
+
+
+/* 개발자들*/
+ h5{
+ 	padding: 50px;
+	text-align: center;
+ } 
+ 
 
   
 
