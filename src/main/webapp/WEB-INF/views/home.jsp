@@ -45,7 +45,8 @@ $(document).ready(function(){
 	<a href="./list.do">모든 게시글 보기</a>
 	<a href="./book_list.do">책 구경하기</a>
 	
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" 
+	>
     새로운 글 작성하기
   </button>
   
@@ -63,13 +64,19 @@ $(document).ready(function(){
         
         <!-- Modal body -->
         <div class="modal-body">
-        	<h6>글쓴이<input type="text" /></h6>
-          
+        	<h6>작성자 : <input type="text" /></h6>
+        	<h6>제목 : <input type="text" /></h6>
+        	<h6>이미지: <input type="file" name="fileupload" accept="image/*" />
+			        	<input type="file" name="fileupload" accept="image/*" />
+			        	<input type="file" name="fileupload" accept="image/*" /></h6>
+			<h6>책선정: <input type="text" />
+			<button type="button" >책검색</button></h6>
+			          
         </div>
         
         <!-- Modal footer -->
         <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-update="modal">완료</button>
+        <button type="button" class="btn btn-submit" data-update="modal">업로드 하기</button>
           <button type="button" class="btn btn-danger" data-dismiss="modal">닫기</button>
         </div>
         
@@ -96,13 +103,26 @@ $(document).ready(function(){
 				
     	</p>
     	
-    	<div class="this_month">
+    	<div class="container-xl mt-3 border">
+	    	<div class="grid-container">
+		    		<div class="table_main">
+				    	<div class="grid-item">1</div>
+				    	<div class="grid-item">1</div>
+				    	<div class="grid-item">1</div>
+				    	<div class="grid-item">1</div>
+				    	<div class="grid-item">1</div>
+				    	<div class="grid-item">1</div>
+		    		</div>
+		    </div>
+    	</div>
+    		
+    		
     	<!-- 이달의 게시글  -->
     	
     	<h3>이달의 게시글</h3>
     	<table>
     		<tr >
-    			<td ><a href="https://naver.com" /><img src="./images/logo.png"  height="250" width="250"alt="1"/><br/>1</td>
+    			<td><a href="https://naver.com" /><img src="./images/logo.png"  height="250" width="250"alt="1"/><br/>1</td>
     			<td><a href="https://daum.net" />2</td>
     			<td><a href="https://naver.com" />3</td>
     		</tr>
@@ -114,7 +134,8 @@ $(document).ready(function(){
     		</tr>
     		
     	</table>
- </div>
+    	
+ 
     	
     	
     	<br/><br/><br/>
@@ -133,10 +154,6 @@ $(document).ready(function(){
     	</tr>
 		</table>
   
-
-
- 
-
 
 </body>
 
